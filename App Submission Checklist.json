@@ -228,7 +228,7 @@
                         {
                            "elementType":"html",
                            "focal":false,
-                           "html":"Please list the screens you’d like to use below. Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information. <b>Modo Labs will take the screenshots.</b>"
+                           "html":"Please list the screens you’d like to use below. <p><b>Modo Labs will take the screenshots.</b>"
                         },
                         {
                            "elementType":"container",
@@ -238,6 +238,11 @@
                            "collapsed":true,
                            "title":"iOS",
                            "content": [
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information."
+                        },
                         {
                            "elementType":"input",
                            "inputType":"text",
