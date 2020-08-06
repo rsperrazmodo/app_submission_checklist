@@ -228,8 +228,16 @@
                         {
                            "elementType":"html",
                            "focal":false,
-                           "html":"If you do not have all the devices, please list the screens you’d like to use in the table below. Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information. <b>Modo Labs will take the screenshots.</b><p><h3>iOS</h3>"
+                           "html":"Please list the screens you’d like to use below. Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information. <b>Modo Labs will take the screenshots.</b>"
                         },
+                        {
+                           "elementType":"container",
+                           "content": [
+                        {
+                           "elementType":"collapsible",
+                           "collapsed":true,
+                           "title":"iOS",
+                           "content": [
                         {
                            "elementType":"input",
                            "inputType":"text",
@@ -410,12 +418,15 @@
                                  }
                               ]
                            }
-                        },
+                        }]}]},
                         {
-                           "elementType":"html",
-                           "focal":false,
-                           "html":"<h3>Android</h3>"
-                        },
+                           "elementType":"container",
+                           "content": [
+                              {
+                                 "elementType":"collapsible",
+                                 "collapsed":true,
+                                 "title":"Android",
+                                 "content": [
                         {
                            "elementType":"input",
                            "inputType":"text",
@@ -489,7 +500,7 @@
                            "placeholder":""
                         }
                      ]
-                  },
+                  }]}]},
                   {
                      "elementType":"collapsible",
                      "title":"Representative Contact Information",
