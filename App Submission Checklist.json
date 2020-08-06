@@ -5,6 +5,8 @@
    "content":[
       {
          "elementType":"container",
+         "backgroundStyle":"focal",
+         "borderStyle":"solid",
          "margins":{
             "value":"responsive"
          },
