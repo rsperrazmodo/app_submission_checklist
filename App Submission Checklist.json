@@ -24,26 +24,26 @@
                      "name":"firstApp",
                      "label":"Is this your <b>VERY FIRST</b> app under your App Store account?",
                      "required":true,
-                     "optionLabels": [
+                     "optionLabels":[
                         "Yes",
                         "No"
                      ],
-                     "optionValues": [
+                     "optionValues":[
                         "yes",
                         "no"
                      ],
-                     "progressiveDisclosureItems": {
-                        "yes": [
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"companynameforios",
-                     "label":"Company Name for iOS",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  }
-                  ]
+                     "progressiveDisclosureItems":{
+                        "yes":[
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"companynameforios",
+                              "label":"Company Name for iOS",
+                              "description":"",
+                              "required":true,
+                              "placeholder":""
+                           }
+                        ]
                      }
                   },
                   {
@@ -398,95 +398,95 @@
                      "inputType":"select",
                      "name":"stickerPack",
                      "label":"Have you created an iOS Sticker Pack?",
-                     "optionLabels": [
+                     "optionLabels":[
                         "Yes",
                         "No"
                      ],
-                     "optionValues": [
+                     "optionValues":[
                         "yes",
                         "no"
                      ],
                      "value":"no",
-                     "progressiveDisclosureItems": {
-                        "yes": [
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot1",
-                     "label":"Screen 1",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot2",
-                     "label":"Screen 2",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot3",
-                     "label":"Screen 3",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot4",
-                     "label":"Screen 4",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot5",
-                     "label":"Screen 5",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"One of the Sticker Screenshots will highlight the stickers being used in conversation please select one (1) sticker to be highlighted, and the text message you would like to display"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot6",
-                     "label":"Picture",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosstickerscreenshot7",
-                     "label":"Text Line",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
+                     "progressiveDisclosureItems":{
+                        "yes":[
+                           {
+                              "elementType":"html",
+                              "focal":false,
+                              "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot1",
+                              "label":"Screen 1",
+                              "description":"",
+                              "required":false,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot2",
+                              "label":"Screen 2",
+                              "description":"",
+                              "required":false,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot3",
+                              "label":"Screen 3",
+                              "description":"",
+                              "required":false,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot4",
+                              "label":"Screen 4",
+                              "description":"",
+                              "required":false,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot5",
+                              "label":"Screen 5",
+                              "description":"",
+                              "required":false,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"html",
+                              "focal":false,
+                              "html":"One of the Sticker Screenshots will highlight the stickers being used in conversation please select one (1) sticker to be highlighted, and the text message you would like to display"
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot6",
+                              "label":"Picture",
+                              "description":"",
+                              "required":true,
+                              "placeholder":""
+                           },
+                           {
+                              "elementType":"input",
+                              "inputType":"text",
+                              "name":"iosstickerscreenshot7",
+                              "label":"Text Line",
+                              "description":"",
+                              "required":true,
+                              "placeholder":""
+                           }
+                        ]
+                     }
                   }
                ]
-                  }
-                  }
-               ]
-},
+            },
             {
                "elementType":"collapsible",
                "title":"Representative Contact Information",
@@ -613,25 +613,139 @@
                   {
                      "elementType":"html",
                      "focal":false,
-                     "html":"The category that best describes this app.<p>More information for iOS, see the <a href=\"https://itunesconnect.apple.com/itc/views/shared/appstore_category_definitions.html\">App Store Category Definitions</a><p>More information for Android, see <a href=\"https://support.google.com/googleplay/android-developer/answer/113475\">Select a Category for Your App or Game</a>.<p><h3>iOS</h3>"
+                     "html":"<h3>iOS</h3>"
                   },
                   {
                      "elementType":"input",
-                     "inputType":"text",
+                     "inputType":"select",
                      "name":"iosCategoryPrimary",
                      "label":"Primary",
-                     "description":"",
+                     "description":"More information for iOS, see the <a href=\"https://itunesconnect.apple.com/itc/views/shared/appstore_category_definitions.html\">App Store Category Definitions</a>",
                      "required":true,
-                     "placeholder":""
+                     "optionLabels":[
+                        "Books",
+                        "Business",
+                        "Developer Tools",
+                        "Education",
+                        "Entertainment",
+                        "Finance",
+                        "Food & Drink",
+                        "Games",
+                        "Graphics & Design",
+                        "Health & Fitness",
+                        "Lifestyle",
+                        "Kids",
+                        "Magazines & Newspapers",
+                        "Medical",
+                        "Music",
+                        "Navigation",
+                        "News",
+                        "Photo & Video",
+                        "Productivity",
+                        "Reference",
+                        "Shopping",
+                        "Social Networking",
+                        "Sports",
+                        "Travel",
+                        "Utilities",
+                        "Weather"
+                     ],
+                     "optionValues":[
+                        "books",
+                        "business",
+                        "developer Tools",
+                        "education",
+                        "entertainment",
+                        "finance",
+                        "foodDrink",
+                        "games",
+                        "graphicsDesign",
+                        "healthFitness",
+                        "lifestyle",
+                        "kids",
+                        "magazinesNewspapers",
+                        "medical",
+                        "music",
+                        "navigation",
+                        "news",
+                        "photoVideo",
+                        "productivity",
+                        "reference",
+                        "shopping",
+                        "socialNetworking",
+                        "sports",
+                        "travel",
+                        "utilities",
+                        "weather"
+                     ],
+                     "value":"education"
                   },
                   {
                      "elementType":"input",
-                     "inputType":"text",
+                     "inputType":"select",
                      "name":"iosCategorySecondary",
                      "label":"Secondary",
                      "description":"",
                      "required":false,
-                     "placeholder":""
+                     "optionLabels":[
+                        "",
+                        "Books",
+                        "Business",
+                        "Developer Tools",
+                        "Education",
+                        "Entertainment",
+                        "Finance",
+                        "Food & Drink",
+                        "Games",
+                        "Graphics & Design",
+                        "Health & Fitness",
+                        "Lifestyle",
+                        "Kids",
+                        "Magazines & Newspapers",
+                        "Medical",
+                        "Music",
+                        "Navigation",
+                        "News",
+                        "Photo & Video",
+                        "Productivity",
+                        "Reference",
+                        "Shopping",
+                        "Social Networking",
+                        "Sports",
+                        "Travel",
+                        "Utilities",
+                        "Weather"
+                     ],
+                     "optionValues":[
+                        "",
+                        "books",
+                        "business",
+                        "developer Tools",
+                        "education",
+                        "entertainment",
+                        "finance",
+                        "foodDrink",
+                        "games",
+                        "graphicsDesign",
+                        "healthFitness",
+                        "lifestyle",
+                        "kids",
+                        "magazinesNewspapers",
+                        "medical",
+                        "music",
+                        "navigation",
+                        "news",
+                        "photoVideo",
+                        "productivity",
+                        "reference",
+                        "shopping",
+                        "socialNetworking",
+                        "sports",
+                        "travel",
+                        "utilities",
+                        "weather"
+                     ],
+                     "value":""
                   },
                   {
                      "elementType":"html",
@@ -640,12 +754,80 @@
                   },
                   {
                      "elementType":"input",
-                     "inputType":"text",
+                     "inputType":"select",
                      "name":"androidCategory",
                      "label":"Android Category",
-                     "description":"",
+                     "description":"More information for Android, see <a href=\"https://support.google.com/googleplay/android-developer/answer/113475\">Select a Category for Your App or Game</a>.",
                      "required":true,
-                     "placeholder":""
+                     "optionLabels":[
+                        "Art & Design",
+                        "Auto & Vehicles",
+                        "Beauty",
+                        "Books & Reference",
+                        "Business",
+                        "Comics",
+                        "Communications",
+                        "Dating",
+                        "Education",
+                        "Entertainment",
+                        "Events",
+                        "Finance",
+                        "Food & Drink",
+                        "Health & Fitness",
+                        "House & Home",
+                        "Libraries & Demo",
+                        "Lifestyle",
+                        "Maps & Navigation",
+                        "Medical",
+                        "Music & Audio",
+                        "News & Magazines",
+                        "Parenting",
+                        "Personalization",
+                        "Photography",
+                        "Productivity",
+                        "Shopping",
+                        "Social",
+                        "Sports",
+                        "Tools",
+                        "Travel & Local",
+                        "Video Players & Editors",
+                        "Weather"
+                     ],
+                     "optionValues":[
+                        "artDesign",
+                        "autoVehicles",
+                        "beauty",
+                        "booksReference",
+                        "business",
+                        "comics",
+                        "communications",
+                        "dating",
+                        "education",
+                        "entertainment",
+                        "events",
+                        "finance",
+                        "foodDrink",
+                        "healthFitness",
+                        "houseHome",
+                        "librariesDemo",
+                        "lifestyle",
+                        "mapsNavigation",
+                        "medical",
+                        "musicAudio",
+                        "newsMagazines",
+                        "parenting",
+                        "personalization",
+                        "photography",
+                        "productivity",
+                        "shopping",
+                        "social",
+                        "sports",
+                        "tools",
+                        "travelLocal",
+                        "videoPlayersEditors",
+                        "weather"
+                     ],
+                     "value":"education"
                   }
                ]
             },
