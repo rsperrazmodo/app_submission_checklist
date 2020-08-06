@@ -320,88 +320,6 @@
                            "placeholder":""
                         },
                         {
-                           "elementType":"html",
-                           "focal":false,
-                           "html":"<h3>Android</h3>"
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot1",
-                           "label":"Screen 1",
-                           "description":"",
-                           "required":true,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot2",
-                           "label":"Screen 2",
-                           "description":"",
-                           "required":true,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot3",
-                           "label":"Screen 3",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot4",
-                           "label":"Screen 4",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot5",
-                           "label":"Screen 5",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot6",
-                           "label":"Screen 6",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot7",
-                           "label":"Screen 7",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"input",
-                           "inputType":"text",
-                           "name":"androidscreenshot8",
-                           "label":"Screen 8",
-                           "description":"",
-                           "required":false,
-                           "placeholder":""
-                        },
-                        {
-                           "elementType":"html",
-                           "focal":false,
-                           "html":"<h2>Sticker Screenshots</h2>"
-                        },
-                        {
                            "elementType":"input",
                            "inputType":"select",
                            "name":"stickerPack",
@@ -492,6 +410,83 @@
                                  }
                               ]
                            }
+                        },
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>Android</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot1",
+                           "label":"Screen 1",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot2",
+                           "label":"Screen 2",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot3",
+                           "label":"Screen 3",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot4",
+                           "label":"Screen 4",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot5",
+                           "label":"Screen 5",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot6",
+                           "label":"Screen 6",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot7",
+                           "label":"Screen 7",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot8",
+                           "label":"Screen 8",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
                         }
                      ]
                   },
