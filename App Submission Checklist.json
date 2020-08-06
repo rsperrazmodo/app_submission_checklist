@@ -20,12 +20,31 @@
                "content":[
                   {
                      "elementType":"input",
+                     "inputType":"select",
+                     "name":"firstApp",
+                     "label":"Is this your <b>VERY FIRST</b> app under your App Store account?",
+                     "required":true,
+                     "optionLabels": [
+                        "Yes",
+                        "No"
+                     ],
+                     "optionValues": [
+                        "yes",
+                        "no"
+                     ],
+                     "progressiveDisclosureItems": {
+                        "yes": [
+                  {
+                     "elementType":"input",
                      "inputType":"text",
                      "name":"companynameforios",
                      "label":"Company Name for iOS",
-                     "description":"This only applies if this is the <b>VERY FIRST APP</b> under you App Store account",
+                     "description":"",
                      "required":true,
                      "placeholder":""
+                  }
+                  ]
+                     }
                   },
                   {
                      "elementType":"input",
@@ -372,7 +391,28 @@
                   {
                      "elementType":"html",
                      "focal":false,
-                     "html":"<h2>Sticker Screenshots (if applicable)</h2><p>Please ignore if you have not taken advantage of Sticker Packs for your IOS App.  If you do not have all the devices, please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
+                     "html":"<h2>Sticker Screenshots</h2>"
+                  },
+                  {
+                     "elementType":"input",
+                     "inputType":"select",
+                     "name":"stickerPack",
+                     "label":"Have you created an iOS Sticker Pack?",
+                     "optionLabels": [
+                        "Yes",
+                        "No"
+                     ],
+                     "optionValues": [
+                        "yes",
+                        "no"
+                     ],
+                     "value":"no",
+                     "progressiveDisclosureItems": {
+                        "yes": [
+                  {
+                     "elementType":"html",
+                     "focal":false,
+                     "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
                   },
                   {
                      "elementType":"input",
@@ -380,7 +420,7 @@
                      "name":"iosstickerscreenshot1",
                      "label":"Screen 1",
                      "description":"",
-                     "required":true,
+                     "required":false,
                      "placeholder":""
                   },
                   {
@@ -430,7 +470,7 @@
                      "name":"iosstickerscreenshot6",
                      "label":"Picture",
                      "description":"",
-                     "required":false,
+                     "required":true,
                      "placeholder":""
                   },
                   {
@@ -439,11 +479,14 @@
                      "name":"iosstickerscreenshot7",
                      "label":"Text Line",
                      "description":"",
-                     "required":false,
+                     "required":true,
                      "placeholder":""
                   }
                ]
-            },
+                  }
+                  }
+               ]
+},
             {
                "elementType":"collapsible",
                "title":"Representative Contact Information",
@@ -482,7 +525,7 @@
                      "name":"address2",
                      "label":"Address 2",
                      "description":"",
-                     "required":true,
+                     "required":false,
                      "placeholder":""
                   },
                   {
