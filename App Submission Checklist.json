@@ -4,1243 +4,1251 @@
    },
    "content":[
       {
-         "elementType":"form",
-         "relativePath":"",
-         "postType":"foreground",
-         "items":[
+         "elementType":"container",
+         "margins":{
+            "value":"responsive"
+         },
+         "content":[
             {
-               "elementType":"html",
-               "focal":false,
-               "html":"<h1>App Submission Checklist</h1>"
-            },
-            {
-               "elementType":"collapsible",
-               "title":"App Metadata",
-               "collapsed":true,
-               "content":[
+               "elementType":"form",
+               "relativePath":"",
+               "postType":"foreground",
+               "items":[
                   {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"firstApp",
-                     "label":"Is this your <b>VERY FIRST</b> app under your App Store account?",
-                     "required":true,
-                     "optionLabels":[
-                        "Yes",
-                        "No"
-                     ],
-                     "optionValues":[
-                        "yes",
-                        "no"
-                     ],
-                     "progressiveDisclosureItems":{
-                        "yes":[
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"companynameforios",
-                              "label":"Company Name for iOS",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
+                     "elementType":"html",
+                     "focal":false,
+                     "html":"<h1>App Submission Checklist</h1>"
+                  },
+                  {
+                     "elementType":"collapsible",
+                     "title":"App Metadata",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"firstApp",
+                           "label":"Is this your <b>VERY FIRST</b> app under your App Store account?",
+                           "required":true,
+                           "optionLabels":[
+                              "Yes",
+                              "No"
+                           ],
+                           "optionValues":[
+                              "yes",
+                              "no"
+                           ],
+                           "progressiveDisclosureItems":{
+                              "yes":[
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"companynameforios",
+                                    "label":"Company Name for iOS",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 }
+                              ]
                            }
-                        ]
-                     }
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"apptitle",
-                     "label":"App Title",
-                     "description":"The title of the app displayed on the user's device. <b>We recommend 10 characters or less</b>",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"appname",
-                     "label":"App Name",
-                     "description":"The title of the app displayed in the app store. <b>Max 30 Characters.</b>",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"subtitleforios",
-                     "label":"Subtitle for iOS",
-                     "description":"Subtitles are limited to 30 characters and appear below your app’s name throughout the App Store in iOS 11. <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 30 Characters.</b>",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"shortdescription",
-                     "label":"Short Description",
-                     "description":"The Short Description on your app’s Store Listing page, is the first descriptive text potential users will see when looking at your app’s Store Listing from the Play Store app. <b>Max 80 characters.</b>",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"promotionaltext",
-                     "label":"Promotional Text ",
-                     "description":"Your app’s promotional text appears at the top of the description and is limited to 170 characters.  <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 170 Characters.</b>",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"textarea",
-                     "name":"fulldescription",
-                     "label":"Full Description",
-                     "description":"<b>Max 4,000 characters.</b><p>Important Note for Android App: For Google Play Store search, please refer to their <a href=\"https://support.google.com/googleplay/android-developer/answer/4448378?hl=en\">best practice document</a>. They recommend using <a href=\"https://support.google.com/webmasters/answer/35291\">SEO Best Practices</a> in your description.",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"upload",
-                     "name":"featuregraphic",
-                     "label":"Feature Graphic",
-                     "description":"<ul><li>1024w x 500h JPG or 24-bit PNG (no alpha)</li><li><a href=\"https://support.google.com/googleplay/android-developer/answer/1078870?hl=en\">Learn More about Google Play guidelines for Graphic assets, screenshots & video</a></li><li>Your Feature Graphic is a powerful tool to show off your creative assets and attract users. The Feature Graphic is displayed at the top of your Store Listing page in the Play Store app.</li>",
-                     "required":true
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"textarea",
-                     "name":"keywords",
-                     "label":"Keywords",
-                     "description":"One or more keywords that describe your app. Keywords make App Store search results more accurate. Separate keywords with a comma. <b>100 characters including spaces and commas.</b>",
-                     "required":true
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"supporturl",
-                     "label":"Support URL",
-                     "description":"A URL with support information for your app.",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"marketingurl",
-                     "label":"Marketing URL",
-                     "description":"A URL with marketing information about your app. This URL will be visible on the App Store. ",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"privacypolicyurl",
-                     "label":"Privacy Policy URL",
-                     "description":"<b>A URL that links to your organization's privacy policy.</b> Privacy policies are required for apps that are Made for Kids, offer auto-renewable In-App Purchases or free subscriptions, or as otherwise required by law. Privacy policies are also recommended for apps that collect user- or device-related data.",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"copyright",
-                     "label":"Copyright",
-                     "description":"The name of the person or entity that owns the exclusive rights to your app, preceded by the year the rights were obtained (for example, \"2008 Acme Inc.\"). Do not provide a URL. ",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"website",
-                     "label":"Website",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"iosRelease",
-                     "label":"iOS Release",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "Automatically release this app once it is approved by Apple",
-                        "Automatically release this app on the following date",
-                        "Require a developer to manually release this app after it has been approved"
-                     ],
-                     "optionValues":[
-                        "automatic",
-                        "timed",
-                        "manual"
-                     ],
-                     "progressiveDisclosureItems":{
-                        "timed":[
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"month",
-                              "label":"Month",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"date",
-                              "label":"Date",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"year",
-                              "label":"Year",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"apptitle",
+                           "label":"App Title",
+                           "description":"The title of the app displayed on the user's device. <b>We recommend 10 characters or less</b>",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"appname",
+                           "label":"App Name",
+                           "description":"The title of the app displayed in the app store. <b>Max 30 Characters.</b>",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"subtitleforios",
+                           "label":"Subtitle for iOS",
+                           "description":"Subtitles are limited to 30 characters and appear below your app’s name throughout the App Store in iOS 11. <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 30 Characters.</b>",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"shortdescription",
+                           "label":"Short Description",
+                           "description":"The Short Description on your app’s Store Listing page, is the first descriptive text potential users will see when looking at your app’s Store Listing from the Play Store app. <b>Max 80 characters.</b>",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"promotionaltext",
+                           "label":"Promotional Text ",
+                           "description":"Your app’s promotional text appears at the top of the description and is limited to 170 characters.  <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 170 Characters.</b>",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"textarea",
+                           "name":"fulldescription",
+                           "label":"Full Description",
+                           "description":"<b>Max 4,000 characters.</b><p>Important Note for Android App: For Google Play Store search, please refer to their <a href=\"https://support.google.com/googleplay/android-developer/answer/4448378?hl=en\">best practice document</a>. They recommend using <a href=\"https://support.google.com/webmasters/answer/35291\">SEO Best Practices</a> in your description.",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"upload",
+                           "name":"featuregraphic",
+                           "label":"Feature Graphic",
+                           "description":"<ul><li>1024w x 500h JPG or 24-bit PNG (no alpha)</li><li><a href=\"https://support.google.com/googleplay/android-developer/answer/1078870?hl=en\">Learn More about Google Play guidelines for Graphic assets, screenshots & video</a></li><li>Your Feature Graphic is a powerful tool to show off your creative assets and attract users. The Feature Graphic is displayed at the top of your Store Listing page in the Play Store app.</li>",
+                           "required":true
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"textarea",
+                           "name":"keywords",
+                           "label":"Keywords",
+                           "description":"One or more keywords that describe your app. Keywords make App Store search results more accurate. Separate keywords with a comma. <b>100 characters including spaces and commas.</b>",
+                           "required":true
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"supporturl",
+                           "label":"Support URL",
+                           "description":"A URL with support information for your app.",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"marketingurl",
+                           "label":"Marketing URL",
+                           "description":"A URL with marketing information about your app. This URL will be visible on the App Store. ",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"privacypolicyurl",
+                           "label":"Privacy Policy URL",
+                           "description":"<b>A URL that links to your organization's privacy policy.</b> Privacy policies are required for apps that are Made for Kids, offer auto-renewable In-App Purchases or free subscriptions, or as otherwise required by law. Privacy policies are also recommended for apps that collect user- or device-related data.",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"copyright",
+                           "label":"Copyright",
+                           "description":"The name of the person or entity that owns the exclusive rights to your app, preceded by the year the rights were obtained (for example, \"2008 Acme Inc.\"). Do not provide a URL. ",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"website",
+                           "label":"Website",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"iosRelease",
+                           "label":"iOS Release",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "Automatically release this app once it is approved by Apple",
+                              "Automatically release this app on the following date",
+                              "Require a developer to manually release this app after it has been approved"
+                           ],
+                           "optionValues":[
+                              "automatic",
+                              "timed",
+                              "manual"
+                           ],
+                           "progressiveDisclosureItems":{
+                              "timed":[
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"month",
+                                    "label":"Month",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"date",
+                                    "label":"Date",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"year",
+                                    "label":"Year",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 }
+                              ]
                            }
-                        ]
-                     }
-                  }
-               ]
-            },
-            {
-               "elementType":"collapsible",
-               "title":"Screenshots",
-               "collapsed":true,
-               "content":[
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"If you do not have all the devices, please list the screens you’d like to use in the table below. Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information. <b>Modo Labs will take the screenshots.</b><p><h3>iOS</h3>"
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot1",
-                     "label":"Screen 1",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot2",
-                     "label":"Screen 2",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot3",
-                     "label":"Screen 3",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot4",
-                     "label":"Screen 4",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot5",
-                     "label":"Screen 5",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot6",
-                     "label":"Screen 6",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot7",
-                     "label":"Screen 7",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot8",
-                     "label":"Screen 8",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot9",
-                     "label":"Screen 9",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosscreenshot10",
-                     "label":"Screen 10",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h3>Android</h3>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot1",
-                     "label":"Screen 1",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot2",
-                     "label":"Screen 2",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot3",
-                     "label":"Screen 3",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot4",
-                     "label":"Screen 4",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot5",
-                     "label":"Screen 5",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot6",
-                     "label":"Screen 6",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot7",
-                     "label":"Screen 7",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidscreenshot8",
-                     "label":"Screen 8",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h2>Sticker Screenshots</h2>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"stickerPack",
-                     "label":"Have you created an iOS Sticker Pack?",
-                     "optionLabels":[
-                        "Yes",
-                        "No"
-                     ],
-                     "optionValues":[
-                        "yes",
-                        "no"
-                     ],
-                     "value":"no",
-                     "progressiveDisclosureItems":{
-                        "yes":[
-                           {
-                              "elementType":"html",
-                              "focal":false,
-                              "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot1",
-                              "label":"Screen 1",
-                              "description":"",
-                              "required":false,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot2",
-                              "label":"Screen 2",
-                              "description":"",
-                              "required":false,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot3",
-                              "label":"Screen 3",
-                              "description":"",
-                              "required":false,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot4",
-                              "label":"Screen 4",
-                              "description":"",
-                              "required":false,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot5",
-                              "label":"Screen 5",
-                              "description":"",
-                              "required":false,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"html",
-                              "focal":false,
-                              "html":"One of the Sticker Screenshots will highlight the stickers being used in conversation please select one (1) sticker to be highlighted, and the text message you would like to display"
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot6",
-                              "label":"Picture",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
-                           },
-                           {
-                              "elementType":"input",
-                              "inputType":"text",
-                              "name":"iosstickerscreenshot7",
-                              "label":"Text Line",
-                              "description":"",
-                              "required":true,
-                              "placeholder":""
+                     "elementType":"collapsible",
+                     "title":"Screenshots",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"If you do not have all the devices, please list the screens you’d like to use in the table below. Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information. <b>Modo Labs will take the screenshots.</b><p><h3>iOS</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot1",
+                           "label":"Screen 1",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot2",
+                           "label":"Screen 2",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot3",
+                           "label":"Screen 3",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot4",
+                           "label":"Screen 4",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot5",
+                           "label":"Screen 5",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot6",
+                           "label":"Screen 6",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot7",
+                           "label":"Screen 7",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot8",
+                           "label":"Screen 8",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot9",
+                           "label":"Screen 9",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosscreenshot10",
+                           "label":"Screen 10",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>Android</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot1",
+                           "label":"Screen 1",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot2",
+                           "label":"Screen 2",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot3",
+                           "label":"Screen 3",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot4",
+                           "label":"Screen 4",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot5",
+                           "label":"Screen 5",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot6",
+                           "label":"Screen 6",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot7",
+                           "label":"Screen 7",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidscreenshot8",
+                           "label":"Screen 8",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h2>Sticker Screenshots</h2>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"stickerPack",
+                           "label":"Have you created an iOS Sticker Pack?",
+                           "optionLabels":[
+                              "Yes",
+                              "No"
+                           ],
+                           "optionValues":[
+                              "yes",
+                              "no"
+                           ],
+                           "value":"no",
+                           "progressiveDisclosureItems":{
+                              "yes":[
+                                 {
+                                    "elementType":"html",
+                                    "focal":false,
+                                    "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot1",
+                                    "label":"Screen 1",
+                                    "description":"",
+                                    "required":false,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot2",
+                                    "label":"Screen 2",
+                                    "description":"",
+                                    "required":false,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot3",
+                                    "label":"Screen 3",
+                                    "description":"",
+                                    "required":false,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot4",
+                                    "label":"Screen 4",
+                                    "description":"",
+                                    "required":false,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot5",
+                                    "label":"Screen 5",
+                                    "description":"",
+                                    "required":false,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"html",
+                                    "focal":false,
+                                    "html":"One of the Sticker Screenshots will highlight the stickers being used in conversation please select one (1) sticker to be highlighted, and the text message you would like to display"
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot6",
+                                    "label":"Picture",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 },
+                                 {
+                                    "elementType":"input",
+                                    "inputType":"text",
+                                    "name":"iosstickerscreenshot7",
+                                    "label":"Text Line",
+                                    "description":"",
+                                    "required":true,
+                                    "placeholder":""
+                                 }
+                              ]
                            }
-                        ]
-                     }
-                  }
-               ]
-            },
-            {
-               "elementType":"collapsible",
-               "title":"Representative Contact Information",
-               "collapsed":true,
-               "content":[
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"firstname",
-                     "label":"First Name",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"lastName",
-                     "label":"Last Name",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
+                     "elementType":"collapsible",
+                     "title":"Representative Contact Information",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"firstname",
+                           "label":"First Name",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"lastName",
+                           "label":"Last Name",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"address1",
+                           "label":"Address 1",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"address2",
+                           "label":"Address 2",
+                           "description":"",
+                           "required":false,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"city",
+                           "label":"City",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"state",
+                           "label":"State",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"postalCode",
+                           "label":"Postal Code",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"phone",
+                           "label":"Phone",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"email",
+                           "label":"Email (publicly displayed)",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"address1",
-                     "label":"Address 1",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
+                     "elementType":"collapsible",
+                     "title":"App Version Number",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc )."
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"iosVersion",
+                           "label":"iOS Version",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"text",
+                           "name":"androidVersion",
+                           "label":"Android Version",
+                           "description":"",
+                           "required":true,
+                           "placeholder":""
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"address2",
-                     "label":"Address 2",
-                     "description":"",
-                     "required":false,
-                     "placeholder":""
+                     "elementType":"collapsible",
+                     "title":"App Category",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>iOS</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"iosCategoryPrimary",
+                           "label":"Primary",
+                           "description":"More information for iOS, see the <a href=\"https://itunesconnect.apple.com/itc/views/shared/appstore_category_definitions.html\">App Store Category Definitions</a>",
+                           "required":true,
+                           "optionLabels":[
+                              "Books",
+                              "Business",
+                              "Developer Tools",
+                              "Education",
+                              "Entertainment",
+                              "Finance",
+                              "Food & Drink",
+                              "Games",
+                              "Graphics & Design",
+                              "Health & Fitness",
+                              "Lifestyle",
+                              "Kids",
+                              "Magazines & Newspapers",
+                              "Medical",
+                              "Music",
+                              "Navigation",
+                              "News",
+                              "Photo & Video",
+                              "Productivity",
+                              "Reference",
+                              "Shopping",
+                              "Social Networking",
+                              "Sports",
+                              "Travel",
+                              "Utilities",
+                              "Weather"
+                           ],
+                           "optionValues":[
+                              "books",
+                              "business",
+                              "developer Tools",
+                              "education",
+                              "entertainment",
+                              "finance",
+                              "foodDrink",
+                              "games",
+                              "graphicsDesign",
+                              "healthFitness",
+                              "lifestyle",
+                              "kids",
+                              "magazinesNewspapers",
+                              "medical",
+                              "music",
+                              "navigation",
+                              "news",
+                              "photoVideo",
+                              "productivity",
+                              "reference",
+                              "shopping",
+                              "socialNetworking",
+                              "sports",
+                              "travel",
+                              "utilities",
+                              "weather"
+                           ],
+                           "value":"education"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"iosCategorySecondary",
+                           "label":"Secondary",
+                           "description":"",
+                           "required":false,
+                           "optionLabels":[
+                              "",
+                              "Books",
+                              "Business",
+                              "Developer Tools",
+                              "Education",
+                              "Entertainment",
+                              "Finance",
+                              "Food & Drink",
+                              "Games",
+                              "Graphics & Design",
+                              "Health & Fitness",
+                              "Lifestyle",
+                              "Kids",
+                              "Magazines & Newspapers",
+                              "Medical",
+                              "Music",
+                              "Navigation",
+                              "News",
+                              "Photo & Video",
+                              "Productivity",
+                              "Reference",
+                              "Shopping",
+                              "Social Networking",
+                              "Sports",
+                              "Travel",
+                              "Utilities",
+                              "Weather"
+                           ],
+                           "optionValues":[
+                              "",
+                              "books",
+                              "business",
+                              "developer Tools",
+                              "education",
+                              "entertainment",
+                              "finance",
+                              "foodDrink",
+                              "games",
+                              "graphicsDesign",
+                              "healthFitness",
+                              "lifestyle",
+                              "kids",
+                              "magazinesNewspapers",
+                              "medical",
+                              "music",
+                              "navigation",
+                              "news",
+                              "photoVideo",
+                              "productivity",
+                              "reference",
+                              "shopping",
+                              "socialNetworking",
+                              "sports",
+                              "travel",
+                              "utilities",
+                              "weather"
+                           ],
+                           "value":""
+                        },
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>Android</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"androidCategory",
+                           "label":"Android Category",
+                           "description":"More information for Android, see <a href=\"https://support.google.com/googleplay/android-developer/answer/113475\">Select a Category for Your App or Game</a>.",
+                           "required":true,
+                           "optionLabels":[
+                              "Art & Design",
+                              "Auto & Vehicles",
+                              "Beauty",
+                              "Books & Reference",
+                              "Business",
+                              "Comics",
+                              "Communications",
+                              "Dating",
+                              "Education",
+                              "Entertainment",
+                              "Events",
+                              "Finance",
+                              "Food & Drink",
+                              "Health & Fitness",
+                              "House & Home",
+                              "Libraries & Demo",
+                              "Lifestyle",
+                              "Maps & Navigation",
+                              "Medical",
+                              "Music & Audio",
+                              "News & Magazines",
+                              "Parenting",
+                              "Personalization",
+                              "Photography",
+                              "Productivity",
+                              "Shopping",
+                              "Social",
+                              "Sports",
+                              "Tools",
+                              "Travel & Local",
+                              "Video Players & Editors",
+                              "Weather"
+                           ],
+                           "optionValues":[
+                              "artDesign",
+                              "autoVehicles",
+                              "beauty",
+                              "booksReference",
+                              "business",
+                              "comics",
+                              "communications",
+                              "dating",
+                              "education",
+                              "entertainment",
+                              "events",
+                              "finance",
+                              "foodDrink",
+                              "healthFitness",
+                              "houseHome",
+                              "librariesDemo",
+                              "lifestyle",
+                              "mapsNavigation",
+                              "medical",
+                              "musicAudio",
+                              "newsMagazines",
+                              "parenting",
+                              "personalization",
+                              "photography",
+                              "productivity",
+                              "shopping",
+                              "social",
+                              "sports",
+                              "tools",
+                              "travelLocal",
+                              "videoPlayersEditors",
+                              "weather"
+                           ],
+                           "value":"education"
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"city",
-                     "label":"City",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
+                     "elementType":"collapsible",
+                     "title":"Content Description and Rating",
+                     "collapsed":true,
+                     "content":[
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>iOS</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"cartoonOrFantasyViolence",
+                           "label":"Cartoon or Fantasy Violence",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"realisticViolence",
+                           "label":"Realistic Violence",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"prolongedGraphicOrSadisticRealisticViolence",
+                           "label":"Prolonged Graphic or Sadistic Realistic Violence",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"profanityOrCrudeHumor",
+                           "label":"Profanity or Crude Humor",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"matureSuggestiveThemes",
+                           "label":"Mature\/Suggestive Themes",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"horrorFearThemes",
+                           "label":"Horror\/Fear Themes",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"medicalTreatmentInformation",
+                           "label":"Medical\/Treatment Information",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"alcoholTobaccoOrDrugUseReferences",
+                           "label":"Alcohol, Tobacco, or Drug Use or References",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"simulatedGambling",
+                           "label":"Simulated Gambling",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"sexualContentOrNudity",
+                           "label":"Sexual Content or Nudity",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"graphicSexualContentOrNudity",
+                           "label":"Graphic Sexual Content or Nudity",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "None",
+                              "Infrequent/Mild",
+                              "Frequent/Intense"
+                           ],
+                           "optionValues":[
+                              "none",
+                              "infrequentMild",
+                              "frequentIntense"
+                           ],
+                           "value":"none"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"unrestrictedWebAccess",
+                           "label":"Unrestricted Web Access",
+                           "description":"Unrestricted web access, such as with an embedded browser. This will make the rating 17+ <p><a href=\"https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/FirstSteps.html#//apple_ref/doc/uid/TP40011225-CH19-SW26\">Learn more</a>.",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"gamblingAndContests",
+                           "label":"Gambling and Contests",
+                           "description":"",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"html",
+                           "focal":false,
+                           "html":"<h3>Android</h3>"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"violence",
+                           "label":"Violence",
+                           "description":"Can the app contain violent material? <a href=\"https://support.google.com/googleplay/android-developer/answer/421\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"sexuality",
+                           "label":"Sexuality",
+                           "description":"Can the app contain sexual material or nudity (except in a natural or scientific setting)? <a href=\"https://support.google.com/googleplay/android-developer/answer/425\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"language",
+                           "label":"Language",
+                           "description":"Can the app contain any potentially offensive language? <a href=\"https://support.google.com/googleplay/android-developer/answer/435\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"controlledSubstance",
+                           "label":"Controlled Substance",
+                           "description":"Can the app contain references to or depictions of illegal drugs? <a href=\"https://support.google.com/googleplay/android-developer/answer/429\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"communication",
+                           "label":"Communication",
+                           "description":"Does the app natively allow users to interact or exchange content with other users through voice communication, text, or sharing images or audio? <a href=\"https://support.google.com/googleplay/android-developer/answer/549\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"thirdParties",
+                           "label":"Third Parties",
+                           "description":"Does the app share user-provided personal information with third parties? <a href=\"https://support.google.com/googleplay/android-developer/answer/539\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"geolocation",
+                           "label":"Geolocation",
+                           "description":"Does the app share the user's current physical location to other users? <a href=\"https://support.google.com/googleplay/android-developer/answer/541\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        },
+                        {
+                           "elementType":"input",
+                           "inputType":"select",
+                           "name":"digitalGoods",
+                           "label":"Digital Goods",
+                           "description":"Does the app allow users to purchase digital goods? <a href=\"https://support.google.com/googleplay/android-developer/answer/543\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
+                           "required":true,
+                           "optionLabels":[
+                              "No",
+                              "Yes"
+                           ],
+                           "optionValues":[
+                              "no",
+                              "yes"
+                           ],
+                           "value":"no"
+                        }
+                     ]
                   },
                   {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"state",
-                     "label":"State",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"postalCode",
-                     "label":"Postal Code",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"phone",
-                     "label":"Phone",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"email",
-                     "label":"Email (publicly displayed)",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  }
-               ]
-            },
-            {
-               "elementType":"collapsible",
-               "title":"App Version Number",
-               "collapsed":true,
-               "content":[
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc )."
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"iosVersion",
-                     "label":"iOS Version",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"text",
-                     "name":"androidVersion",
-                     "label":"Android Version",
-                     "description":"",
-                     "required":true,
-                     "placeholder":""
-                  }
-               ]
-            },
-            {
-               "elementType":"collapsible",
-               "title":"App Category",
-               "collapsed":true,
-               "content":[
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h3>iOS</h3>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"iosCategoryPrimary",
-                     "label":"Primary",
-                     "description":"More information for iOS, see the <a href=\"https://itunesconnect.apple.com/itc/views/shared/appstore_category_definitions.html\">App Store Category Definitions</a>",
-                     "required":true,
-                     "optionLabels":[
-                        "Books",
-                        "Business",
-                        "Developer Tools",
-                        "Education",
-                        "Entertainment",
-                        "Finance",
-                        "Food & Drink",
-                        "Games",
-                        "Graphics & Design",
-                        "Health & Fitness",
-                        "Lifestyle",
-                        "Kids",
-                        "Magazines & Newspapers",
-                        "Medical",
-                        "Music",
-                        "Navigation",
-                        "News",
-                        "Photo & Video",
-                        "Productivity",
-                        "Reference",
-                        "Shopping",
-                        "Social Networking",
-                        "Sports",
-                        "Travel",
-                        "Utilities",
-                        "Weather"
-                     ],
-                     "optionValues":[
-                        "books",
-                        "business",
-                        "developer Tools",
-                        "education",
-                        "entertainment",
-                        "finance",
-                        "foodDrink",
-                        "games",
-                        "graphicsDesign",
-                        "healthFitness",
-                        "lifestyle",
-                        "kids",
-                        "magazinesNewspapers",
-                        "medical",
-                        "music",
-                        "navigation",
-                        "news",
-                        "photoVideo",
-                        "productivity",
-                        "reference",
-                        "shopping",
-                        "socialNetworking",
-                        "sports",
-                        "travel",
-                        "utilities",
-                        "weather"
-                     ],
-                     "value":"education"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"iosCategorySecondary",
-                     "label":"Secondary",
-                     "description":"",
-                     "required":false,
-                     "optionLabels":[
-                        "",
-                        "Books",
-                        "Business",
-                        "Developer Tools",
-                        "Education",
-                        "Entertainment",
-                        "Finance",
-                        "Food & Drink",
-                        "Games",
-                        "Graphics & Design",
-                        "Health & Fitness",
-                        "Lifestyle",
-                        "Kids",
-                        "Magazines & Newspapers",
-                        "Medical",
-                        "Music",
-                        "Navigation",
-                        "News",
-                        "Photo & Video",
-                        "Productivity",
-                        "Reference",
-                        "Shopping",
-                        "Social Networking",
-                        "Sports",
-                        "Travel",
-                        "Utilities",
-                        "Weather"
-                     ],
-                     "optionValues":[
-                        "",
-                        "books",
-                        "business",
-                        "developer Tools",
-                        "education",
-                        "entertainment",
-                        "finance",
-                        "foodDrink",
-                        "games",
-                        "graphicsDesign",
-                        "healthFitness",
-                        "lifestyle",
-                        "kids",
-                        "magazinesNewspapers",
-                        "medical",
-                        "music",
-                        "navigation",
-                        "news",
-                        "photoVideo",
-                        "productivity",
-                        "reference",
-                        "shopping",
-                        "socialNetworking",
-                        "sports",
-                        "travel",
-                        "utilities",
-                        "weather"
-                     ],
-                     "value":""
-                  },
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h3>Android</h3>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"androidCategory",
-                     "label":"Android Category",
-                     "description":"More information for Android, see <a href=\"https://support.google.com/googleplay/android-developer/answer/113475\">Select a Category for Your App or Game</a>.",
-                     "required":true,
-                     "optionLabels":[
-                        "Art & Design",
-                        "Auto & Vehicles",
-                        "Beauty",
-                        "Books & Reference",
-                        "Business",
-                        "Comics",
-                        "Communications",
-                        "Dating",
-                        "Education",
-                        "Entertainment",
-                        "Events",
-                        "Finance",
-                        "Food & Drink",
-                        "Health & Fitness",
-                        "House & Home",
-                        "Libraries & Demo",
-                        "Lifestyle",
-                        "Maps & Navigation",
-                        "Medical",
-                        "Music & Audio",
-                        "News & Magazines",
-                        "Parenting",
-                        "Personalization",
-                        "Photography",
-                        "Productivity",
-                        "Shopping",
-                        "Social",
-                        "Sports",
-                        "Tools",
-                        "Travel & Local",
-                        "Video Players & Editors",
-                        "Weather"
-                     ],
-                     "optionValues":[
-                        "artDesign",
-                        "autoVehicles",
-                        "beauty",
-                        "booksReference",
-                        "business",
-                        "comics",
-                        "communications",
-                        "dating",
-                        "education",
-                        "entertainment",
-                        "events",
-                        "finance",
-                        "foodDrink",
-                        "healthFitness",
-                        "houseHome",
-                        "librariesDemo",
-                        "lifestyle",
-                        "mapsNavigation",
-                        "medical",
-                        "musicAudio",
-                        "newsMagazines",
-                        "parenting",
-                        "personalization",
-                        "photography",
-                        "productivity",
-                        "shopping",
-                        "social",
-                        "sports",
-                        "tools",
-                        "travelLocal",
-                        "videoPlayersEditors",
-                        "weather"
-                     ],
-                     "value":"education"
-                  }
-               ]
-            },
-            {
-               "elementType":"collapsible",
-               "title":"Content Description and Rating",
-               "collapsed":true,
-               "content":[
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h3>iOS</h3>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"cartoonOrFantasyViolence",
-                     "label":"Cartoon or Fantasy Violence",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"realisticViolence",
-                     "label":"Realistic Violence",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"prolongedGraphicOrSadisticRealisticViolence",
-                     "label":"Prolonged Graphic or Sadistic Realistic Violence",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"profanityOrCrudeHumor",
-                     "label":"Profanity or Crude Humor",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"matureSuggestiveThemes",
-                     "label":"Mature\/Suggestive Themes",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"horrorFearThemes",
-                     "label":"Horror\/Fear Themes",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"medicalTreatmentInformation",
-                     "label":"Medical\/Treatment Information",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"alcoholTobaccoOrDrugUseReferences",
-                     "label":"Alcohol, Tobacco, or Drug Use or References",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"simulatedGambling",
-                     "label":"Simulated Gambling",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"sexualContentOrNudity",
-                     "label":"Sexual Content or Nudity",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"graphicSexualContentOrNudity",
-                     "label":"Graphic Sexual Content or Nudity",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "None",
-                        "Infrequent/Mild",
-                        "Frequent/Intense"
-                     ],
-                     "optionValues":[
-                        "none",
-                        "infrequentMild",
-                        "frequentIntense"
-                     ],
-                     "value":"none"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"unrestrictedWebAccess",
-                     "label":"Unrestricted Web Access",
-                     "description":"Unrestricted web access, such as with an embedded browser. This will make the rating 17+ <p><a href=\"https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/FirstSteps.html#//apple_ref/doc/uid/TP40011225-CH19-SW26\">Learn more</a>.",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"gamblingAndContests",
-                     "label":"Gambling and Contests",
-                     "description":"",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"html",
-                     "focal":false,
-                     "html":"<h3>Android</h3>"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"violence",
-                     "label":"Violence",
-                     "description":"Can the app contain violent material? <a href=\"https://support.google.com/googleplay/android-developer/answer/421\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"sexuality",
-                     "label":"Sexuality",
-                     "description":"Can the app contain sexual material or nudity (except in a natural or scientific setting)? <a href=\"https://support.google.com/googleplay/android-developer/answer/425\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"language",
-                     "label":"Language",
-                     "description":"Can the app contain any potentially offensive language? <a href=\"https://support.google.com/googleplay/android-developer/answer/435\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"controlledSubstance",
-                     "label":"Controlled Substance",
-                     "description":"Can the app contain references to or depictions of illegal drugs? <a href=\"https://support.google.com/googleplay/android-developer/answer/429\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"communication",
-                     "label":"Communication",
-                     "description":"Does the app natively allow users to interact or exchange content with other users through voice communication, text, or sharing images or audio? <a href=\"https://support.google.com/googleplay/android-developer/answer/549\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"thirdParties",
-                     "label":"Third Parties",
-                     "description":"Does the app share user-provided personal information with third parties? <a href=\"https://support.google.com/googleplay/android-developer/answer/539\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"geolocation",
-                     "label":"Geolocation",
-                     "description":"Does the app share the user's current physical location to other users? <a href=\"https://support.google.com/googleplay/android-developer/answer/541\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  },
-                  {
-                     "elementType":"input",
-                     "inputType":"select",
-                     "name":"digitalGoods",
-                     "label":"Digital Goods",
-                     "description":"Does the app allow users to purchase digital goods? <a href=\"https://support.google.com/googleplay/android-developer/answer/543\">Learn more</a><p><sub>Please note that this question does not refer to user-generated content.</sub>",
-                     "required":true,
-                     "optionLabels":[
-                        "No",
-                        "Yes"
-                     ],
-                     "optionValues":[
-                        "no",
-                        "yes"
-                     ],
-                     "value":"no"
-                  }
-               ]
-            },
-            {
-               "elementType":"buttonContainer",
-               "buttons":[
-                  {
-                     "elementType":"formButton",
-                     "title":"Submit",
-                     "buttonType":"submit",
-                     "actionType":"constructive"
-                  },
-                  {
-                     "elementType":"formButton",
-                     "title":"Reset",
-                     "buttonType":"reset",
-                     "actionType":"destructive"
+                     "elementType":"buttonContainer",
+                     "buttons":[
+                        {
+                           "elementType":"formButton",
+                           "title":"Submit",
+                           "buttonType":"submit",
+                           "actionType":"constructive"
+                        },
+                        {
+                           "elementType":"formButton",
+                           "title":"Reset",
+                           "buttonType":"reset",
+                           "actionType":"destructive"
+                        }
+                     ]
                   }
                ]
             }
