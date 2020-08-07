@@ -14,7 +14,7 @@
             {
                "elementType":"html",
                "focal":false,
-               "html":"<h1>App Submission Checklist</h1>"
+               "html":"<div style=\"text-align: center;\"><h1>App Submission Checklist</h1></div>"
             },
             {
                "elementType":"form",
