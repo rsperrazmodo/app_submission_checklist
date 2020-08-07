@@ -20,6 +20,7 @@
                "elementType":"form",
                "relativePath":"",
                "postType":"foreground",
+               "heading":"App Submission Checklist",
                "items":[
                   {
                      "elementType":"visibilityContainer",
