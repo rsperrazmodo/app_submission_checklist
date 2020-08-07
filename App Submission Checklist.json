@@ -12,15 +12,10 @@
          },
          "content":[
             {
-               "elementType":"html",
-               "focal":false,
-               "html":"<div style=\"text-align: center;\"><h1>App Submission Checklist</h1></div>"
-            },
-            {
                "elementType":"form",
                "relativePath":"",
                "postType":"foreground",
-               "heading":"App Submission Checklist",
+               "heading":"<div style=\"text-align: center;\"><h1>App Submission Checklist</h1></div>",
                "items":[
                   {
                      "elementType":"visibilityContainer",
