@@ -12,10 +12,14 @@
          },
          "content":[
             {
+               "elementType":"html",
+               "focal":false,
+               "html":"<h1>App Submission Checklist</h1>"
+            },
+            {
                "elementType":"form",
                "relativePath":"",
                "postType":"foreground",
-               "heading":"<div style=\"text-align: center;\"><h1>App Submission Checklist</h1></div>",
                "items":[
                   {
                      "elementType":"visibilityContainer",
@@ -1262,23 +1266,23 @@
                                              "value":"no"
                                           }
                                        ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "elementType":"buttonContainer",
+                                 "buttons":[
+                                    {
+                                       "elementType":"formButton",
+                                       "title":"Submit",
+                                       "buttonType":"submit",
+                                       "actionType":"constructive"
                                     },
                                     {
-                                       "elementType":"buttonContainer",
-                                       "buttons":[
-                                          {
-                                             "elementType":"formButton",
-                                             "title":"Submit",
-                                             "buttonType":"submit",
-                                             "actionType":"constructive"
-                                          },
-                                          {
-                                             "elementType":"formButton",
-                                             "title":"Reset",
-                                             "buttonType":"reset",
-                                             "actionType":"destructive"
-                                          }
-                                       ]
+                                       "elementType":"formButton",
+                                       "title":"Reset",
+                                       "buttonType":"reset",
+                                       "actionType":"destructive"
                                     }
                                  ]
                               }
