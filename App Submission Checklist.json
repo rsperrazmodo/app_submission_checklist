@@ -954,7 +954,7 @@
                                              "elementType":"input",
                                              "inputType":"select",
                                              "name":"matureSuggestiveThemes",
-                                             "label":"Mature\/Suggestive Themes",
+                                             "label":"Mature/Suggestive Themes",
                                              "description":"",
                                              "required":true,
                                              "optionLabels":[
@@ -973,7 +973,7 @@
                                              "elementType":"input",
                                              "inputType":"select",
                                              "name":"horrorFearThemes",
-                                             "label":"Horror\/Fear Themes",
+                                             "label":"Horror/Fear Themes",
                                              "description":"",
                                              "required":true,
                                              "optionLabels":[
@@ -992,7 +992,7 @@
                                              "elementType":"input",
                                              "inputType":"select",
                                              "name":"medicalTreatmentInformation",
-                                             "label":"Medical\/Treatment Information",
+                                             "label":"Medical/Treatment Information",
                                              "description":"",
                                              "required":true,
                                              "optionLabels":[
@@ -1268,23 +1268,23 @@
                                        ]
                                     }
                                  ]
+                              }
+                           ]
+                        },
+                        {
+                           "elementType":"buttonContainer",
+                           "buttons":[
+                              {
+                                 "elementType":"formButton",
+                                 "title":"Submit",
+                                 "buttonType":"submit",
+                                 "actionType":"constructive"
                               },
                               {
-                                 "elementType":"buttonContainer",
-                                 "buttons":[
-                                    {
-                                       "elementType":"formButton",
-                                       "title":"Submit",
-                                       "buttonType":"submit",
-                                       "actionType":"constructive"
-                                    },
-                                    {
-                                       "elementType":"formButton",
-                                       "title":"Reset",
-                                       "buttonType":"reset",
-                                       "actionType":"destructive"
-                                    }
-                                 ]
+                                 "elementType":"formButton",
+                                 "title":"Reset",
+                                 "buttonType":"reset",
+                                 "actionType":"destructive"
                               }
                            ]
                         }
