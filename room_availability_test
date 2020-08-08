@@ -1,0 +1,203 @@
+  
+<?php
+
+$htmlLegend = [
+	'elementType' => 'html',
+	'focal' => false,
+	'html' => '<div style="text-align: center;">
+<div style="background-color: #00FF00; display: inline-block; width: 10px; height: 10px;"></div>
+<div style="display: inline-block; padding-left: 5px; padding-right: 10px;">Available</div>
+<div style="padding: 20px; display: inline-block;"></div>
+<div style="background-color: #FF0000; display: inline-block; width: 10px; height: 10px;"></div>
+<div style="margin-right: auto; display: inline-block; padding-left: 5px; padding-right: 10px;">Occupied</div>
+</div>',
+];
+
+$lineBreak = [
+	'elementType' => 'html',
+	'focal' => false,
+	'html' => '<br>',
+];
+
+$annexFloor = [
+	'elementType' => 'leafletMap',
+	'aspectRatio' => '16:9',
+	'initialZoomLevel' => 1,
+	'minZoomLevel' => 1,
+	'maxZoomLevel' => 4,
+	'showZoomButtons' => false,
+	'baseLayers' => [
+		'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'tiles/annex/{z}/{x}/{y}.png',
+	],
+	'dynamicPlacemarks' => [
+		'ajaxRelativePath' => './annexPlacemarks.php',
+		'ajaxUpdateInterval' => 5,
+	]
+];
+
+$floor1 = [
+	'elementType' => 'leafletMap',
+	'aspectRatio' => '16:9',
+	'initialZoomLevel' => 1,
+	'minZoomLevel' => 1,
+	'maxZoomLevel' => 4,
+	'showZoomButtons' => false,
+	'baseLayers' => [
+		'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'tiles/floor1/{z}/{x}/{y}.png',
+	],
+	'dynamicPlacemarks' => [
+		'ajaxRelativePath' => './floor1Placemarks.php',
+		'ajaxUpdateInterval' => 5,
+	]
+];
+
+$floor2 = [
+	'elementType' => 'leafletMap',
+	'aspectRatio' => '16:9',
+	'initialZoomLevel' => 1,
+	'minZoomLevel' => 1,
+	'maxZoomLevel' => 4,
+	'showZoomButtons' => false,
+	'baseLayers' => [
+		'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'tiles/floor2/{z}/{x}/{y}.png',
+	],
+	'dynamicPlacemarks' => [
+		'ajaxRelativePath' => './floor2Placemarks.php',
+		'ajaxUpdateInterval' => 5,
+	]
+];
+
+$floor3 = [
+	'elementType' => 'leafletMap',
+	'aspectRatio' => '16:9',
+	'initialZoomLevel' => 1,
+	'minZoomLevel' => 1,
+	'maxZoomLevel' => 4,
+	'showZoomButtons' => false,
+	'baseLayers' => [
+		'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'tiles/floor4/{z}/{x}/{y}.png',
+	],
+	'dynamicPlacemarks' => [
+		'ajaxRelativePath' => './floor3Placemarks.php',
+		'ajaxUpdateInterval' => 5,
+	]
+];
+
+$content = [
+	'elementType' => 'form',
+	'heading' => 'Room Availability',
+	'relativePath' => '',
+	'items' => [
+		[
+			'elementType' => 'input',
+			'inputType' => 'select',
+			'name' => 'select_building',
+			'label' => 'Building',
+			'value' => '',
+			'optionLabels' => [
+				'',
+				'Headquarters',
+				'Annex',
+			],
+			'optionValues' => [
+				'',
+				'headquarters',
+				'annex',
+			],
+			'progressiveDisclosureItems' => [
+				'headquarters' => [
+					[
+						'elementType' => 'input',
+						'inputType' => 'select',
+						'name' => 'select_floor',
+						'label' => 'Floor',
+						'value' => '',
+						'optionLabels' => [
+							'',
+							'L',
+							'2',
+							'3',
+						],
+						'optionValues' => [
+							'',
+							'L',
+							'2',
+							'3',
+						],
+						'progressiveDisclosureItems' => [
+							'L' => [
+								$lineBreak,
+								$floor1,
+								$htmlLegend,
+							],
+							'2' => [
+								$lineBreak,
+								$floor2,
+								$htmlLegend,
+							],
+							'3' => [
+								$lineBreak,
+								$floor3,
+								$htmlLegend,
+							],
+						],
+					],
+				],
+				'annex' => [
+					[
+						'elementType' => 'input',
+						'inputType' => 'select',
+						'name' => 'select_floor',
+						'label' => 'Floor',
+						'value' => '',
+						'optionLabels' => [
+							'',
+							'Ground',
+						],
+						'optionValues' => [
+							'',
+							'ground',
+						],
+						'progressiveDisclosureItems' => [
+							'ground' => [
+								$lineBreak,
+								$annexFloor,
+								$htmlLegend,
+							],
+						],
+					],
+				],
+			],
+		],
+	],
+];
+
+$hero = [
+	'elementType' => 'image',
+    'url' => 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'].'images/hero.jpg',
+    'scaleToFull' => true,
+    'enableZoomControls' => false
+];
+
+
+
+$output = [
+    'metadata' => [
+        'version' => '1',
+    ],
+    'content' => [
+    	[
+    		'elementType' => 'container',
+        	'margins' => [
+        		'value' => 'responsive'
+        	],
+        	'content' => [
+        		$hero,
+        		$content
+        	]
+    	]
+    ],
+];
+
+header('Content-Type: application/json');
+echo json_encode($output, JSON_PRETTY_PRINT);
