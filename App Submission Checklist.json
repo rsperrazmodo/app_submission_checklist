@@ -594,15 +594,15 @@
                                  "required":true,
                                  "placeholder":""
                               },
-                                      {
-            "elementType": "input",
-            "inputType": "email",
-            "name": "email",
-            "label": "Email (publicly displayed)",
-            "description": "Email Description",
-            "required": true,
-            "placeholder": ""
-        }
+                              {
+                                  "elementType": "input",
+                                  "inputType": "email",
+                                  "name": "email",
+                                  "label": "Email (publicly displayed)",
+                                  "description": "",
+                                  "required": true,
+                                  "placeholder": ""
+                              }
                            ]
                         },
                         {
