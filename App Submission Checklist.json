@@ -1281,6 +1281,12 @@
                                  "actionType":"constructive"
                               },
                               {
+                                 "elementType": "formButton",
+                                 "title": "Save",
+                                 "buttonType": "submit",
+                                 "actionType": "constructive"
+                              },
+                              {
                                  "elementType":"formButton",
                                  "title":"Reset",
                                  "buttonType":"reset",
