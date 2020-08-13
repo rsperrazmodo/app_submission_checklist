@@ -178,7 +178,7 @@
                                        "required":true,
                                        "optionLabels":[
                                           "Automatically release this app once it is approved by Apple",
-                                          "Automatically release this app on the following date",
+                                          "Automatically release this app on a specific date",
                                           "Require a developer to manually release this app after it has been approved"
                                        ],
                                        "optionValues":[
@@ -1338,7 +1338,7 @@
                                  "required":true,
                                  "optionLabels":[
                                     "Automatically release this app once it is approved by Apple",
-                                    "Automatically release this app on the following date",
+                                    "Automatically release this app on a specific date",
                                     "Require a developer to manually release this app after it has been approved"
                                  ],
                                  "optionValues":[
@@ -1913,6 +1913,29 @@
                                        }
                                     ]
                                  }
+                              },
+                              {
+                                 "elementType":"buttonContainer",
+                                 "buttons":[
+                                    {
+                                       "elementType":"formButton",
+                                       "title":"Submit",
+                                       "buttonType":"submit",
+                                       "actionType":"constructive"
+                                    },
+                                    {
+                                       "elementType":"formButton",
+                                       "title":"Save",
+                                       "buttonType":"submit",
+                                       "actionType":"constructive"
+                                    },
+                                    {
+                                       "elementType":"formButton",
+                                       "title":"Reset",
+                                       "buttonType":"reset",
+                                       "actionType":"destructive"
+                                    }
+                                 ]
                               }
                            ]
                         }
