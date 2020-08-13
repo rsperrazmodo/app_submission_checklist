@@ -171,7 +171,7 @@
                                     },
                                     {
                                        "elementType":"input",
-                                       "inputType":"select",
+                                       "inputType":"radio",
                                        "name":"iosRelease",
                                        "label":"iOS Release",
                                        "description":"",
@@ -1298,7 +1298,624 @@
                   {
                      "title":"Update an existing app",
                      "content":[
-
+                        {
+                           "elementType":"form",
+                           "relativePath":"",
+                           "postType":"foreground",
+                           "items":[
+                              {
+                                 "elementType":"input",
+                                 "inputType":"textarea",
+                                 "name":"whatsNew",
+                                 "label":"What's New?",
+                                 "description":"Short description of changes with updated app. <b>Apps must clearly describe new features and product changes in their “What’s New” text.</b> Simple bug fixes, security updates, and performance improvements may rely on a generic description, but more significant changes must be listed in the notes. <a href=\"https://developer.apple.com/app-store/review/guidelines/#accurate-metadata\">(Apple Review Guideline: 2.3.12)</a>",
+                                 "required":true
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"iosVersion",
+                                 "label":"iOS Version",
+                                 "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
+                                 "required":true,
+                                 "placeholder":""
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"androidVersion",
+                                 "label":"Android Version",
+                                 "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
+                                 "required":true,
+                                 "placeholder":""
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"radio",
+                                 "name":"iosRelease",
+                                 "label":"iOS Release",
+                                 "description":"",
+                                 "required":true,
+                                 "optionLabels":[
+                                    "Automatically release this app once it is approved by Apple",
+                                    "Automatically release this app on the following date",
+                                    "Require a developer to manually release this app after it has been approved"
+                                 ],
+                                 "optionValues":[
+                                    "automatic",
+                                    "timed",
+                                    "manual"
+                                 ],
+                                 "progressiveDisclosureItems":{
+                                    "timed":[
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"month",
+                                          "label":"Month",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"date",
+                                          "label":"Date",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"year",
+                                          "label":"Year",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"radio",
+                                 "name":"resetRating",
+                                 "label":"Reset iOS Summary Rating",
+                                 "description":"You can reset your app’s summary rating for all territories when you release this version. Keep in mind that once this version is released, you won’t be able to restore the rating. Your app’s existing customer reviews will still appear on the App Store. <a href=\"https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1046597271/activity/ios/ratingsResponses\">View Ratings and Reviews</a>",
+                                 "required":true,
+                                 "optionLabels":[
+                                    "Keep existing rating",
+                                    "Reset rating when this version is released"
+                                 ],
+                                 "optionValues":[
+                                    "keep",
+                                    "reset"
+                                 ]
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"select",
+                                 "name":"existingAndroid",
+                                 "label":"Are you updating an existing app with new Modo Labs’ app?",
+                                 "optionLabels":[
+                                    "No",
+                                    "Yes"
+                                 ],
+                                 "optionValues":[
+                                    "no",
+                                    "yes"
+                                 ],
+                                 "progressiveDisclosureItems":{
+                                    "yes":[
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"upload",
+                                          "name":"keystoreFile",
+                                          "label":"Keystore File",
+                                          "required":true
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"upload",
+                                          "name":"keyAlias",
+                                          "label":"Key Alias",
+                                          "required":true
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"upload",
+                                          "name":"keystorePassword",
+                                          "label":"Keystore Password",
+                                          "required":true
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"upload",
+                                          "name":"keyPassword",
+                                          "label":"Key Password",
+                                          "required":true
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"appTitle",
+                                 "label":"App Title",
+                                 "description":"The title of the app displayed on the user's device. We recommend <b>10 characters or less.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"appName",
+                                 "label":"App Name for Store Listing Title",
+                                 "description":"The title of the app displayed in the app store. <b>Max 30 Characters.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"shortDescription",
+                                 "label":"Short Description for Android",
+                                 "description":"<b>Max 30 Characters.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"promotionalText",
+                                 "label":"Promotional Text for iOS",
+                                 "description":"Your app’s promotional text appears at the top of the description and is limited to 170 characters.  <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 170 Characters.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"subtitle",
+                                 "label":"Subtitle for iOS",
+                                 "description":"Subtitles are limited to 30 characters and appear below your app’s name throughout the App Store in iOS 11.  <a href=\"https://developer.apple.com/app-store/product-page/\">More Information available from Here.</a> <b>Max 30 Characters.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"textarea",
+                                 "name":"fullDescription",
+                                 "label":"Full Description",
+                                 "description":"<b>Max 4,000 characters.</b><p>Important Note for Android App: For Google Play Store search, please refer to their <a href=\"https://support.google.com/googleplay/android-developer/answer/4448378?hl=en\">best practice document.</a> They recommend using <a href=\"https://support.google.com/webmasters/answer/35291\">SEO Best Practices</a> in your description.",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"keywords",
+                                 "label":"New Keywords for iOS",
+                                 "description":"<b>One or more keywords that describe your app. Keywords make App Store search results more accurate. Separate keywords with a comma. <b>100 characters including spaces and commas.</b>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"supportUrl",
+                                 "label":"Support URL",
+                                 "description":"A URL with support information for your app.",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"privacyPolicyUrl",
+                                 "label":"Privacy Policy URL",
+                                 "description":"<b>A URL that links to your organization's privacy policy.</b> Privacy policies are required for apps that are Made for Kids, offer auto-renewable In-App Purchases or free subscriptions, or as otherwise required by law. Privacy policies are also recommended for apps that collect user- or device-related data.",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"text",
+                                 "name":"copyright",
+                                 "label":"Copyright",
+                                 "description":"The name of the person or entity that owns the exclusive rights to your app, preceded by the year the rights were obtained (for example, \"2008 Acme Inc.\"). Do not provide a URL.",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"upload",
+                                 "name":"featuregraphic",
+                                 "label":"Feature Graphic",
+                                 "description":"<ul><li>1024w x 500h JPG or 24-bit PNG (no alpha)</li><li><a href=\"https://support.google.com/googleplay/android-developer/answer/1078870?hl=en\">Learn More about Google Play guidelines for Graphic assets, screenshots & video</a></li><li>Your Feature Graphic is a powerful tool to show off your creative assets and attract users. The Feature Graphic is displayed at the top of your Store Listing page in the Play Store app.</li>",
+                                 "required":false
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"select",
+                                 "required":false,
+                                 "name":"updatingScreenshots",
+                                 "label":"Are you replacing the existing screenshots?",
+                                 "optionLabels":[
+                                    "No",
+                                    "Yes"
+                                 ],
+                                 "optionValues":[
+                                    "no",
+                                    "yes"
+                                 ],
+                                 "progressiveDisclosureItems":{
+                                    "yes":[
+                                       {
+                                          "elementType":"html",
+                                          "focal":false,
+                                          "html":"Please list the screens you’d like to use below. <p><b>Modo Labs will take the screenshots.</b>"
+                                       },
+                                       {
+                                          "elementType":"html",
+                                          "focal":false,
+                                          "html":"<h2>iOS</h2><p>Please see <a href=\"https://help.apple.com/app-store-connect/#/dev910472ff2\">App Store icon, app preview, and screenshots overview - App Store Connect Help</a> for more information."
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot1",
+                                          "label":"Screen 1",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot2",
+                                          "label":"Screen 2",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot3",
+                                          "label":"Screen 3",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot4",
+                                          "label":"Screen 4",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot5",
+                                          "label":"Screen 5",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot6",
+                                          "label":"Screen 6",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot7",
+                                          "label":"Screen 7",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot8",
+                                          "label":"Screen 8",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot9",
+                                          "label":"Screen 9",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"iosscreenshot10",
+                                          "label":"Screen 10",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"select",
+                                          "name":"stickerPack",
+                                          "label":"Have you created an iOS Sticker Pack?",
+                                          "optionLabels":[
+                                             "Yes",
+                                             "No"
+                                          ],
+                                          "optionValues":[
+                                             "yes",
+                                             "no"
+                                          ],
+                                          "value":"no",
+                                          "progressiveDisclosureItems":{
+                                             "yes":[
+                                                {
+                                                   "elementType":"html",
+                                                   "focal":false,
+                                                   "html":"Please list the screens you’d like to use in the table below. <b>Modo Labs will take screenshots.</b>"
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot1",
+                                                   "label":"Screen 1",
+                                                   "description":"",
+                                                   "required":false,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot2",
+                                                   "label":"Screen 2",
+                                                   "description":"",
+                                                   "required":false,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot3",
+                                                   "label":"Screen 3",
+                                                   "description":"",
+                                                   "required":false,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot4",
+                                                   "label":"Screen 4",
+                                                   "description":"",
+                                                   "required":false,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot5",
+                                                   "label":"Screen 5",
+                                                   "description":"",
+                                                   "required":false,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"html",
+                                                   "focal":false,
+                                                   "html":"One of the Sticker Screenshots will highlight the stickers being used in conversation please select one (1) sticker to be highlighted, and the text message you would like to display"
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot6",
+                                                   "label":"Picture",
+                                                   "description":"",
+                                                   "required":true,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"iosstickerscreenshot7",
+                                                   "label":"Text Line",
+                                                   "description":"",
+                                                   "required":true,
+                                                   "placeholder":""
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "elementType":"html",
+                                          "focal":false,
+                                          "html":"<h2>Android</h2>"
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot1",
+                                          "label":"Screen 1",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot2",
+                                          "label":"Screen 2",
+                                          "description":"",
+                                          "required":true,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot3",
+                                          "label":"Screen 3",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot4",
+                                          "label":"Screen 4",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot5",
+                                          "label":"Screen 5",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot6",
+                                          "label":"Screen 6",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot7",
+                                          "label":"Screen 7",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidscreenshot8",
+                                          "label":"Screen 8",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "elementType":"input",
+                                 "inputType":"select",
+                                 "name":"updateContactInfo",
+                                 "label":"Are you updating the Representative Contact Information?",
+                                 "optionLabels":[
+                                    "No",
+                                    "Yes"
+                                 ],
+                                 "optionValues":[
+                                    "no",
+                                    "yes"
+                                 ],
+                                 "progressiveDisclosureItems":{
+                                    "yes":[
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"firstname",
+                                          "label":"First Name",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"lastName",
+                                          "label":"Last Name",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"address1",
+                                          "label":"Address 1",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"address2",
+                                          "label":"Address 2",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"city",
+                                          "label":"City",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"state",
+                                          "label":"State",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"postalCode",
+                                          "label":"Postal Code",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"phone",
+                                          "label":"Phone",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       },
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"email",
+                                          "name":"email",
+                                          "label":"Email (publicly displayed)",
+                                          "description":"",
+                                          "required":false,
+                                          "placeholder":""
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
                      ]
                   }
                ]
