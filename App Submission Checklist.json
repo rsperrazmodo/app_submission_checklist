@@ -1313,86 +1313,124 @@
                               },
                               {
                                  "elementType":"input",
-                                 "inputType":"text",
-                                 "name":"iosVersion",
-                                 "label":"iOS Version",
-                                 "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
-                                 "required":true,
-                                 "placeholder":""
-                              },
-                              {
-                                 "elementType":"input",
-                                 "inputType":"text",
-                                 "name":"androidVersion",
-                                 "label":"Android Version",
-                                 "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
-                                 "required":true,
-                                 "placeholder":""
-                              },
-                              {
-                                 "elementType":"input",
-                                 "inputType":"radio",
-                                 "name":"iosRelease",
-                                 "label":"iOS Release",
-                                 "description":"",
+                                 "inputType":"select",
+                                 "name":"newIos",
+                                 "label":"Are you submitting an update to the iOS App Store?",
                                  "required":true,
                                  "optionLabels":[
-                                    "Automatically release this app once it is approved by Apple",
-                                    "Automatically release this app on a specific date",
-                                    "Require a developer to manually release this app after it has been approved"
+                                    "Yes",
+                                    "No"
                                  ],
                                  "optionValues":[
-                                    "automatic",
-                                    "timed",
-                                    "manual"
+                                    "yes",
+                                    "no"
                                  ],
                                  "progressiveDisclosureItems":{
-                                    "timed":[
+                                    "yes":[
                                        {
                                           "elementType":"input",
                                           "inputType":"text",
-                                          "name":"month",
-                                          "label":"Month",
-                                          "description":"",
+                                          "name":"iosVersion",
+                                          "label":"iOS Version",
+                                          "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
                                           "required":true,
                                           "placeholder":""
                                        },
                                        {
                                           "elementType":"input",
-                                          "inputType":"text",
-                                          "name":"date",
-                                          "label":"Date",
+                                          "inputType":"radio",
+                                          "name":"iosRelease",
+                                          "label":"iOS Release",
                                           "description":"",
                                           "required":true,
-                                          "placeholder":""
+                                          "optionLabels":[
+                                             "Automatically release this app once it is approved by Apple",
+                                             "Automatically release this app on a specific date",
+                                             "Require a developer to manually release this app after it has been approved"
+                                          ],
+                                          "optionValues":[
+                                             "automatic",
+                                             "timed",
+                                             "manual"
+                                          ],
+                                          "progressiveDisclosureItems":{
+                                             "timed":[
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"month",
+                                                   "label":"Month",
+                                                   "description":"",
+                                                   "required":true,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"date",
+                                                   "label":"Date",
+                                                   "description":"",
+                                                   "required":true,
+                                                   "placeholder":""
+                                                },
+                                                {
+                                                   "elementType":"input",
+                                                   "inputType":"text",
+                                                   "name":"year",
+                                                   "label":"Year",
+                                                   "description":"",
+                                                   "required":true,
+                                                   "placeholder":""
+                                                }
+                                             ]
+                                          }
                                        },
                                        {
                                           "elementType":"input",
-                                          "inputType":"text",
-                                          "name":"year",
-                                          "label":"Year",
-                                          "description":"",
+                                          "inputType":"radio",
+                                          "name":"resetRating",
+                                          "label":"Reset iOS Summary Rating",
+                                          "description":"You can reset your app’s summary rating for all territories when you release this version. Keep in mind that once this version is released, you won’t be able to restore the rating. Your app’s existing customer reviews will still appear on the App Store. <a href=\"https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1046597271/activity/ios/ratingsResponses\">View Ratings and Reviews</a>",
                                           "required":true,
-                                          "placeholder":""
+                                          "optionLabels":[
+                                             "Keep existing rating",
+                                             "Reset rating when this version is released"
+                                          ],
+                                          "optionValues":[
+                                             "keep",
+                                             "reset"
+                                          ]
                                        }
                                     ]
                                  }
                               },
                               {
                                  "elementType":"input",
-                                 "inputType":"radio",
-                                 "name":"resetRating",
-                                 "label":"Reset iOS Summary Rating",
-                                 "description":"You can reset your app’s summary rating for all territories when you release this version. Keep in mind that once this version is released, you won’t be able to restore the rating. Your app’s existing customer reviews will still appear on the App Store. <a href=\"https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1046597271/activity/ios/ratingsResponses\">View Ratings and Reviews</a>",
+                                 "inputType":"select",
+                                 "name":"newAndroid",
+                                 "label":"Are you submitting an update to the Play Store?",
                                  "required":true,
                                  "optionLabels":[
-                                    "Keep existing rating",
-                                    "Reset rating when this version is released"
+                                    "Yes",
+                                    "No"
                                  ],
                                  "optionValues":[
-                                    "keep",
-                                    "reset"
-                                 ]
+                                    "yes",
+                                    "no"
+                                 ],
+                                 "progressiveDisclosureItems":{
+                                    "yes":[
+                                       {
+                                          "elementType":"input",
+                                          "inputType":"text",
+                                          "name":"androidVersion",
+                                          "label":"Android Version",
+                                          "description":"The version number of the app you are adding. Numbering should follow software versioning conventions (1.0; 2.0.1, etc ).",
+                                          "required":true,
+                                          "placeholder":""
+                                       }
+                                    ]
+                                 }
                               },
                               {
                                  "elementType":"input",
